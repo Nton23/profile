@@ -10,7 +10,57 @@
 </head>
 
 <body>
-    <!-- Nav-bar section -->
+    <!-- Main container -->
+    <main>
+        <!-- Nav-bar section -->
+        <nav class="border border-red-600">
+            <!-- Nav container -->
+            <div class="border border-red-600 flex justify-between p-5">
+                <!-- Name/Logo Container-->
+                <div class="font-bold text-4xl">Ton Nguyen</div>
+                <!-- Nav links/Night & day mode container -->
+                <div class="flex items-center space-x-8 border border-red-600">
+                    <a href="#home" class="font-bold text-lg">Home</a>
+                    <a href="#projects" class="font-bold text-lg">Projects</a>
+                    <button class="w-5 h-5 border border-black"></button>
+                </div>
+
+            </div>
+            <!-- Hamburger button -->
+            <div class="md:hidden">
+                <button class="z-40 block hamburger md:hidden focus:outline-none" id="menu-btn" type="button">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- Hero Section -->
+        <section class="border border-blue-600">
+            <!-- Hero Container -->
+            <div class="border border-black max-w-5xl mx-auto p-2">
+                <!-- Introduction paragraph container -->
+                <div>
+                    <p>Hello, my name is Ton H Nguyen and i am currently a college student at Western Governor
+                        University. I am pursuing bachelor in computer science.</p>
+                </div>
+                <!-- Connect media links container -->
+                <div>
+                    <div id="git-hub"></div>
+                    <div id="linked"></div>
+                    <div id="handshake"></div>
+                    <div id="email"></div>
+                    <div id="phone-number"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Project Section -->
+        <section>
+            <!-- Project container -->
+            <div></div>
+        </section>
+    </main>
+    <script src="js/script.js" defer></script>
 </body>
 
 </html>
