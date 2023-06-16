@@ -6,59 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Domine&family=Lilita+One&family=Open+Sans:wght@400;700&family=Rubik:wght@400;600;700&family=Teko:wght@500&display=swap"
+        rel="stylesheet">
     <title>Ton Nguyen Profile</title>
 </head>
 
 <body>
     <!-- Main container -->
-    <main>
-        <!-- Nav-bar section -->
-        <nav class="border border-red-600">
-            <!-- Nav container -->
-            <div class="border border-red-600 flex justify-between p-5">
-                <!-- Name/Logo Container-->
-                <div class="font-bold text-4xl">Ton Nguyen</div>
-                <!-- Nav links/Night & day mode container -->
-                <div class="flex items-center space-x-8 border border-red-600">
-                    <a href="#home" class="font-bold text-lg">Home</a>
-                    <a href="#projects" class="font-bold text-lg">Projects</a>
-                    <button class="w-5 h-5 border border-black"></button>
-                </div>
-
-            </div>
-            <!-- Hamburger button -->
-            <div class="md:hidden">
-                <button class="z-40 block hamburger md:hidden focus:outline-none" id="menu-btn" type="button">
-                    <span class="hamburger-top"></span>
-                    <span class="hamburger-middle"></span>
-                    <span class="hamburger-bottom"></span>
-                </button>
+    <main
+        class="border-2 border-red-600 h-screen p-10 grid grid-cols-[20%_80%] md:grid-cols-[15%_85%] lg:grid-cols-[12%_88%] xl:grid-cols-[10%_90%] 2xl:grid-cols-[8%_92%] 3xl:grid-cols-[5%_95%]">
+        <!-- Nav container -->
+        <nav class="border-2 border-red-500 bg-purple-500 space-y-60">
+            <!-- Intial Container -->
+            <div class="bg-purple-700 font-bttnStyle text-center text-7xl h-28 text-white">Tn</div>
+            <!-- Links container -->
+            <div class="flex flex-col items-center space-y-10 border border-red-600">
+                <a href="#home">Home</a>
+                <a href="#home">Home</a>
+                <a href="#home">Home</a>
+                <a href="#home">Home</a>
+                <a href="#home">Home</a>
             </div>
         </nav>
-        <!-- Hero Section -->
-        <section class="border border-blue-600">
-            <!-- Hero Container -->
-            <div class="border border-black max-w-5xl mx-auto p-2">
-                <!-- Introduction paragraph container -->
-                <div>
-                    <p>Hello, my name is Ton H Nguyen and i am currently a college student at Western Governor
-                        University. I am pursuing bachelor in computer science.</p>
-                </div>
-                <!-- Connect media links container -->
-                <div>
-                    <div id="git-hub"></div>
-                    <div id="linked"></div>
-                    <div id="handshake"></div>
-                    <div id="email"></div>
-                    <div id="phone-number"></div>
-                </div>
-            </div>
-        </section>
-        <!-- Project Section -->
-        <section>
-            <!-- Project container -->
-            <div></div>
-        </section>
+        <!-- Panels container -->
+        <section id="panels"></section>
     </main>
     <script src="js/script.js" defer></script>
 </body>
