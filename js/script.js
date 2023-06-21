@@ -22,3 +22,4 @@ function onLinkClick(e) {
     console.log(document.getElementById('panels'));
     console.log(classString);
 }
+//<script src="js/script.js" defer></script>
