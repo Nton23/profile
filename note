@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Domine&family=Lilita+One&family=Open+Sans:wght@400;700&family=Rubik:wght@400;600;700&family=Teko:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Ton Nguyen Profile</title>
+</head>
+
+<body>
+    <!-- Main container -->
+    <main id="links"
+        class=" h-screen p-10 grid grid-cols-[20%_80%] md:grid-cols-[15%_85%] lg:grid-cols-[12%_88%] xl:grid-cols-[10%_90%] 2xl:grid-cols-[8%_92%] 3xl:grid-cols-[5%_95%]">
+        <!-- Nav container -->
+        <nav class=" bg-blue-500 space-y-60">
+            <!-- Intial Container -->
+            <div class="bg-blue-700 font-bttnStyle flex justify-center items-center text-7xl h-28 text-white">
+                <div>Tn</div>
+            </div>
+            <!-- Links container -->
+            <div class="flex flex-col items-center space-y-10">
+                <a href="#mode" class="w-8 text-sm flex flex-col items-center text-center">
+                    <img src="Images/icons8-bulb-256.png" alt="" />Light
+                    Mode</a>
+                <a href="#home" class="w-8 text-sm flex flex-col items-center link" data-target="home-panel">
+                    <img src="Images/icons8-home-256.png" alt="" data-target="home-panel" />
+                    Home
+                </a>
+                <a href="#profile" class="w-8 text-sm flex flex-col items-center text-center link"
+                    data-target="profile-panel">
+                    <img src="Images/icons8-user-64.png" alt="" data-target="profile-panel" />
+                    About Me
+                </a>
+                <a href="#project" class="w-8 text-sm flex flex-col items-center link" data-target="projects-panel">
+                    <img src="Images/icons8-folder.svg" alt="" data-target="projects-panel" />
+                    Projects
+                </a>
+                <a href="#contact" class="w-8 text-sm flex flex-col items-center link" data-target="contact-panel">
+                    <img src="Images/icons8-address-book-256.png" alt="" data-target="contact-panel" />
+                    Contacts
+                </a>
+            </div>
+        </nav>
+        <!-- Panels container -->
+        <section id="panels" class="relative">
+            <!-- Home wrapper -->
+            <div id="home-panel" class="h-full flex items-center justify-center home-panel panel">
+                <!-- Home Container -->
+                <div class="flex justify-center items-center space-x-14">
+                    <!-- Profile picture container -->
+                    <div class="relative w-64 h-64">
+                        <img src="Images/profile-picture.jpeg" alt="" class="absolute rounded-full w-64 h-64 z-50" />
+                        <div class="absolute bg-blue-500 rounded-full w-64 h-64 ml-2 z-40"></div>
+                        <div class="absolute bg-blue-400 rounded-full w-64 h-64 ml-4 z-30"></div>
+                        <div class="absolute bg-blue-300 rounded-full w-64 h-64 ml-6 z-20"></div>
+                    </div>
+                    <!-- Description Container -->
+                    <div class="max-w-md space-y-5">
+                        <h5 class="text-md font-headingName">HI THERE! I'M</h5>
+                        <h1 class="text-5xl font-headingName"><span class="text-blue-500">TON</span> NGUYEN</h1>
+                        <p class="text-sm font-regStyle">I'm a college student and front-end web developer fueled by a
+                            passion for
+                            creating
+                            captivating online experiences. With a love for web and coding, I thrive on collaboration
+                            and strive to make the digital world more inclusive and accessible. Excited to learn, grow,
+                            and leave my mark in the ever-evolving field of web development.</p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <a href="#"
+                                    class="bg-blue-500 py-2 px-6 rounded-full font-bttnStyle text-white">Resume</a>
+                            </div>
+                            <div class="flex space-x-5">
+                                <a href="#" class="shadow-md w-10 h-10">
+                                    <img src="Images/icons8-linkedin-96.png" alt="" />
+                                </a>
+                                <a href="#" class="shadow-md w-10 h-10">
+                                    <img src="Images/icons8-github-96.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About Me Wrapper -->
+            <div id="profile-panel" class="h-full flex items-center justify-center profile-panel panel hidden">
+                <!-- About Me Container -->
+                <div>
+                    <div class="relative p-10 rounded-xl shadow-lg border border-blue-100">
+                        <!-- Quotes IMAGE -->
+                        <img src="Images/bg-pattern-quotation.svg" alt=""
+                            class="absolute top-3 right-10 scale-125 md:top-7 md:right-24 md:scale-150" />
+                        <!-- Box Header -->
+                        <div class="flex z-10 space-x-4">
+                            <img src="Images/profile-picture.jpeg" alt=""
+                                class="w-10 h-10 rounded-full ring-2 ring-blue-300" />
+                            <div class="text-sm">
+                                <h4 class="opacity-90 font-headingName text-lg">Ton Nguyen</h4>
+                            </div>
+                        </div>
+                        <!-- Large TExt -->
+                        <p class="relative z-10 mt-6 text-xl">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, accusantium. Veritatis
+                            quisquam, rem doloribus nostrum illo animi nam fuga, maiores distinctio maxime odit ex
+                            recusandae soluta quaerat necessitatibus accusamus adipisci!
+                        </p>
+                        <!-- Small TExt -->
+                        <p class="mt-6 opacity-60 line-clamp-6">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias incidunt neque corrupti
+                            placeat magnam voluptatibus eaque, similique, nobis possimus officia perferendis voluptas
+                            nostrum aliquam vero est optio quas? Voluptatum incidunt nihil, atque voluptas ut amet eum
+                            eligendi ullam impedit, dolorum odit necessitatibus? Laborum alias est non quas fugiat.
+                            Dolores, natus!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Projects Wrapper -->
+            <div id="projects-panel" class="h-full flex items-center justify-center projects-panel panel hidden">
+                <!-- Projects container -->
+                <div class=" grid grid-cols-3 gap-5">
+                    <!-- Project content container -->
+                    <div class="w-64 h-80 shadow-xl border border-blue-300 hover:scale-105">
+                        <!-- Top Container -->
+                        <div class="p-2 w-full h-56">
+                            <!-- GIF img here! -->
+                            <img src="Images/sample.jpg" alt="" class="object-contain h-full w-full" />
+                        </div>
+                        <!-- Bottom Container -->
+                        <div class="p-2">
+                            <div>
+                                <!-- Name of the project and description -->
+                                <h5 class="text-center font-regStyle font-bold capitalize">This is the title of the
+                                    project</h5>
+                                <p class="font-regStyle text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                    elit. Consequuntur, amet? <span><a href="#" class="text-blue-500 underline">Link to
+                                            project</a></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project content container -->
+                    <div class="w-64 h-80 shadow-xl border border-blue-300 hover:scale-105">
+                        <!-- Top Container -->
+                        <div class="p-2 w-full h-56">
+                            <!-- GIF img here! -->
+                            <img src="Images/sample.jpg" alt="" class="object-contain h-full w-full" />
+                        </div>
+                        <!-- Bottom Container -->
+                        <div class="p-2">
+                            <div>
+                                <!-- Name of the project and description -->
+                                <h5 class="text-center font-regStyle font-bold capitalize">This is the title of the
+                                    project</h5>
+                                <p class="font-regStyle text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                    elit. Consequuntur, amet? <span><a href="#" class="text-blue-500 underline">Link to
+                                            project</a></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project content container -->
+                    <div class="w-64 h-80 shadow-xl border border-blue-300 hover:scale-105">
+                        <!-- Top Container -->
+                        <div class="p-2 w-full h-56">
+                            <!-- GIF img here! -->
+                            <img src="Images/sample.jpg" alt="" class="object-contain h-full w-full" />
+                        </div>
+                        <!-- Bottom Container -->
+                        <div class="p-2">
+                            <div>
+                                <!-- Name of the project and description -->
+                                <h5 class="text-center font-regStyle font-bold capitalize">This is the title of the
+                                    project</h5>
+                                <p class="font-regStyle text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                    elit. Consequuntur, amet? <span><a href="#" class="text-blue-500 underline">Link to
+                                            project</a></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project content container -->
+                    <div class="w-64 h-80 shadow-xl border border-blue-300 hover:scale-105">
+                        <!-- Top Container -->
+                        <div class="p-2 w-full h-56">
+                            <!-- GIF img here! -->
+                            <img src="Images/sample.jpg" alt="" class="object-contain h-full w-full" />
+                        </div>
+                        <!-- Bottom Container -->
+                        <div class="p-2">
+                            <div>
+                                <!-- Name of the project and description -->
+                                <h5 class="text-center font-regStyle font-bold capitalize">This is the title of the
+                                    project</h5>
+                                <p class="font-regStyle text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                    elit. Consequuntur, amet? <span><a href="#" class="text-blue-500 underline">Link to
+                                            project</a></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project content container -->
+                    <div class="w-64 h-80 shadow-xl border border-blue-300 hover:scale-105">
+                        <!-- Top Container -->
+                        <div class="p-2 w-full h-56">
+                            <!-- GIF img here! -->
+                            <img src="Images/sample.jpg" alt="" class="object-contain h-full w-full" />
+                        </div>
+                        <!-- Bottom Container -->
+                        <div class="p-2">
+                            <div>
+                                <!-- Name of the project and description -->
+                                <h5 class="text-center font-regStyle font-bold capitalize">This is the title of the
+                                    project</h5>
+                                <p class="font-regStyle text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                    elit. Consequuntur, amet? <span><a href="#" class="text-blue-500 underline">Link to
+                                            project</a></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project content container -->
+                    <div class="w-64 h-80 shadow-xl border border-blue-300 hover:scale-105">
+                        <!-- Top Container -->
+                        <div class="p-2 w-full h-56">
+                            <!-- GIF img here! -->
+                            <img src="Images/sample.jpg" alt="" class="object-contain h-full w-full" />
+                        </div>
+                        <!-- Bottom Container -->
+                        <div class="p-2">
+                            <div>
+                                <!-- Name of the project and description -->
+                                <h5 class="text-center font-regStyle font-bold capitalize">This is the title of the
+                                    project</h5>
+                                <p class="font-regStyle text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                    elit. Consequuntur, amet? <span><a href="#" class="text-blue-500 underline">Link to
+                                            project</a></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Wrapper -->
+            <div id="contact-panel" class="h-full flex items-center justify-center contact-panel panel hidden">
+                <!-- Contact Container -->
+                <div>
+                    <!-- Contact content container -->
+                    <div class="space-y-5">
+                        <h1 class="text-center text-5xl font-bold font-regStyle">Thank You!</h1>
+                        <p class="text-center text-xl font-regStyle">You can contact me at those links below</p>
+                        <div class="flex flex-row space-x-5">
+                            <a href="#email" class="text-blue-500 underline">Loremipsum.@gmail.com</a>
+                            <a href="#linkined" class="text-blue-500 underline">Loremipsum.@linkedin.com</a>
+                            <a href="#indeed" class="text-blue-500 underline">Loremipsum.@indeed.com</a>
+                            <a href="#github" class="text-blue-500 underline">Loremipsum.@github.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="js/script.js" defer></script>
+
+</html>
