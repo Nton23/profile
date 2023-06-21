@@ -17,11 +17,12 @@
 <body>
     <!-- Main container -->
     <main id="links"
-        class=" h-screen p-10 grid grid-cols-[20%_80%] md:grid-cols-[15%_85%] lg:grid-cols-[12%_88%] xl:grid-cols-[10%_90%] 2xl:grid-cols-[8%_92%] 3xl:grid-cols-[5%_95%]">
+        class=" h-screen grid grid-cols-[20%_80%] md:grid-cols-[15%_85%] lg:grid-cols-[12%_88%] xl:grid-cols-[10%_90%] 2xl:grid-cols-[8%_92%] 3xl:grid-cols-[5%_95%] md:p-10">
         <!-- Nav container -->
         <nav class=" bg-blue-500 space-y-60">
             <!-- Intial Container -->
-            <div class="bg-blue-700 font-bttnStyle flex justify-center items-center text-7xl h-28 text-white">
+            <div
+                class="bg-blue-700 font-bttnStyle flex justify-center items-center text-5xl h-16 text-white md:text-6xl lg:text-7xl md:h-28">
                 <div>Tn</div>
             </div>
             <!-- Links container -->
@@ -51,15 +52,16 @@
         <!-- Panels container -->
         <section id="panels" class="relative">
             <!-- Home wrapper -->
-            <div id="home-panel" class="h-full flex items-center justify-center home-panel panel">
+            <div id="home-panel" class="flex flex-col h-full lg:items-center justify-center home-panel panel">
                 <!-- Home Container -->
-                <div class="flex justify-center items-center space-x-14">
+                <div class="flex flex-col items-center p-3 lg:flex-row lg:justify-center lg:items-center lg:space-x-14">
                     <!-- Profile picture container -->
                     <div class="relative w-64 h-64">
-                        <img src="Images/profile-picture.jpeg" alt="" class="absolute rounded-full w-64 h-64 z-50" />
-                        <div class="absolute bg-blue-500 rounded-full w-64 h-64 ml-2 z-40"></div>
-                        <div class="absolute bg-blue-400 rounded-full w-64 h-64 ml-4 z-30"></div>
-                        <div class="absolute bg-blue-300 rounded-full w-64 h-64 ml-6 z-20"></div>
+                        <img src="Images/profile-picture.jpeg" alt=""
+                            class="absolute rounded-full w-52 h-52 lg:w-64 lg:h-64 z-50" />
+                        <div class="absolute bg-blue-500 rounded-full w-52 h-52 lg:w-64 lg:h-64 ml-2 z-40"></div>
+                        <div class="absolute bg-blue-400 rounded-full w-52 h-52 lg:w-64 lg:h-64 ml-4 z-30"></div>
+                        <div class="absolute bg-blue-300 rounded-full w-52 h-52 lg:w-64 lg:h-64 ml-6 z-20"></div>
                     </div>
                     <!-- Description Container -->
                     <div class="max-w-md space-y-5">
@@ -89,7 +91,7 @@
                 </div>
             </div>
             <!-- About Me Wrapper -->
-            <div id="profile-panel" class="h-full flex items-center justify-center profile-panel panel hidden">
+            <div id="profile-panel" class="h-full flex items-center md:justify-center profile-panel panel hidden">
                 <!-- About Me Container -->
                 <div>
                     <div class="relative p-10 rounded-xl shadow-lg border border-blue-100">
@@ -122,13 +124,13 @@
                 </div>
             </div>
             <!-- Projects Wrapper -->
-            <div id="projects-panel" class="h-full flex items-center justify-center projects-panel panel hidden">
+            <div id="projects-panel" class="h-full flex lg:items-center lg:justify-center projects-panel panel hidden">
                 <!-- Projects container -->
-                <div class=" grid grid-cols-3 gap-5">
+                <div class=" grid p-5 grid-cols-1 md:grid-cols-2 lg:p-0 xl:grid-cols-3 gap-5">
                     <!-- Project content container -->
-                    <div class="w-64 h-80 shadow-xl border border-blue-300 hover:scale-105">
+                    <div class="w-56 h-72 md:w-64 md:h-80 shadow-xl border border-blue-300 hover:scale-105">
                         <!-- Top Container -->
-                        <div class="p-2 w-full h-56">
+                        <div class="p-2 w-full h-36 md:h-56">
                             <!-- GIF img here! -->
                             <img src="Images/sample.jpg" alt="" class="object-contain h-full w-full" />
                         </div>
@@ -138,16 +140,17 @@
                                 <!-- Name of the project and description -->
                                 <h5 class="text-center font-regStyle font-bold capitalize">This is the title of the
                                     project</h5>
-                                <p class="font-regStyle text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                <p class="font-regStyle text-xs text-center md:text-start">Lorem ipsum dolor, sit amet
+                                    consectetur adipisicing
                                     elit. Consequuntur, amet? <span><a href="#" class="text-blue-500 underline">Link to
                                             project</a></span></p>
                             </div>
                         </div>
                     </div>
                     <!-- Project content container -->
-                    <div class="w-64 h-80 shadow-xl border border-blue-300 hover:scale-105">
+                    <div class="w-56 h-72 md:w-64 md:h-80 shadow-xl border border-blue-300 hover:scale-105">
                         <!-- Top Container -->
-                        <div class="p-2 w-full h-56">
+                        <div class="p-2 w-full h-36 md:h-56">
                             <!-- GIF img here! -->
                             <img src="Images/sample.jpg" alt="" class="object-contain h-full w-full" />
                         </div>
@@ -157,16 +160,17 @@
                                 <!-- Name of the project and description -->
                                 <h5 class="text-center font-regStyle font-bold capitalize">This is the title of the
                                     project</h5>
-                                <p class="font-regStyle text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                <p class="font-regStyle text-xs text-center md:text-start">Lorem ipsum dolor, sit amet
+                                    consectetur adipisicing
                                     elit. Consequuntur, amet? <span><a href="#" class="text-blue-500 underline">Link to
                                             project</a></span></p>
                             </div>
                         </div>
                     </div>
                     <!-- Project content container -->
-                    <div class="w-64 h-80 shadow-xl border border-blue-300 hover:scale-105">
+                    <div class="w-56 h-72 md:w-64 md:h-80 shadow-xl border border-blue-300 hover:scale-105">
                         <!-- Top Container -->
-                        <div class="p-2 w-full h-56">
+                        <div class="p-2 w-full h-36 md:h-56">
                             <!-- GIF img here! -->
                             <img src="Images/sample.jpg" alt="" class="object-contain h-full w-full" />
                         </div>
@@ -176,16 +180,17 @@
                                 <!-- Name of the project and description -->
                                 <h5 class="text-center font-regStyle font-bold capitalize">This is the title of the
                                     project</h5>
-                                <p class="font-regStyle text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                <p class="font-regStyle text-xs text-center md:text-start">Lorem ipsum dolor, sit amet
+                                    consectetur adipisicing
                                     elit. Consequuntur, amet? <span><a href="#" class="text-blue-500 underline">Link to
                                             project</a></span></p>
                             </div>
                         </div>
                     </div>
                     <!-- Project content container -->
-                    <div class="w-64 h-80 shadow-xl border border-blue-300 hover:scale-105">
+                    <div class="w-56 h-72 md:w-64 md:h-80 shadow-xl border border-blue-300 hover:scale-105">
                         <!-- Top Container -->
-                        <div class="p-2 w-full h-56">
+                        <div class="p-2 w-full h-36 md:h-56">
                             <!-- GIF img here! -->
                             <img src="Images/sample.jpg" alt="" class="object-contain h-full w-full" />
                         </div>
@@ -195,16 +200,17 @@
                                 <!-- Name of the project and description -->
                                 <h5 class="text-center font-regStyle font-bold capitalize">This is the title of the
                                     project</h5>
-                                <p class="font-regStyle text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                <p class="font-regStyle text-xs text-center md:text-start">Lorem ipsum dolor, sit amet
+                                    consectetur adipisicing
                                     elit. Consequuntur, amet? <span><a href="#" class="text-blue-500 underline">Link to
                                             project</a></span></p>
                             </div>
                         </div>
                     </div>
                     <!-- Project content container -->
-                    <div class="w-64 h-80 shadow-xl border border-blue-300 hover:scale-105">
+                    <div class="w-56 h-72 md:w-64 md:h-80 shadow-xl border border-blue-300 hover:scale-105">
                         <!-- Top Container -->
-                        <div class="p-2 w-full h-56">
+                        <div class="p-2 w-full h-36 md:h-56">
                             <!-- GIF img here! -->
                             <img src="Images/sample.jpg" alt="" class="object-contain h-full w-full" />
                         </div>
@@ -214,16 +220,17 @@
                                 <!-- Name of the project and description -->
                                 <h5 class="text-center font-regStyle font-bold capitalize">This is the title of the
                                     project</h5>
-                                <p class="font-regStyle text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                <p class="font-regStyle text-xs text-center md:text-start">Lorem ipsum dolor, sit amet
+                                    consectetur adipisicing
                                     elit. Consequuntur, amet? <span><a href="#" class="text-blue-500 underline">Link to
                                             project</a></span></p>
                             </div>
                         </div>
                     </div>
                     <!-- Project content container -->
-                    <div class="w-64 h-80 shadow-xl border border-blue-300 hover:scale-105">
+                    <div class="w-56 h-72 md:w-64 md:h-80 shadow-xl border border-blue-300 hover:scale-105">
                         <!-- Top Container -->
-                        <div class="p-2 w-full h-56">
+                        <div class="p-2 w-full h-36 md:h-56">
                             <!-- GIF img here! -->
                             <img src="Images/sample.jpg" alt="" class="object-contain h-full w-full" />
                         </div>
@@ -233,7 +240,8 @@
                                 <!-- Name of the project and description -->
                                 <h5 class="text-center font-regStyle font-bold capitalize">This is the title of the
                                     project</h5>
-                                <p class="font-regStyle text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                <p class="font-regStyle text-xs text-center md:text-start">Lorem ipsum dolor, sit amet
+                                    consectetur adipisicing
                                     elit. Consequuntur, amet? <span><a href="#" class="text-blue-500 underline">Link to
                                             project</a></span></p>
                             </div>
@@ -247,9 +255,11 @@
                 <div>
                     <!-- Contact content container -->
                     <div class="space-y-5">
-                        <h1 class="text-center text-5xl font-bold font-regStyle">Thank You!</h1>
-                        <p class="text-center text-xl font-regStyle">You can contact me at those links below</p>
-                        <div class="flex flex-row space-x-5">
+                        <h1 class="text-center text-3xl lg:text-5xl font-bold font-regStyle">Thank You!</h1>
+                        <p class="text-center text-sm lg:text-md lg:text-xl font-regStyle">You can contact me at those
+                            links below
+                        </p>
+                        <div class="flex flex-col items-center gap-3 lg:flex-row lg:space-x-5">
                             <a href="#email" class="text-blue-500 underline">Loremipsum.@gmail.com</a>
                             <a href="#linkined" class="text-blue-500 underline">Loremipsum.@linkedin.com</a>
                             <a href="#indeed" class="text-blue-500 underline">Loremipsum.@indeed.com</a>
