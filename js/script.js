@@ -5,11 +5,7 @@ const panels = document.querySelectorAll('.panel')
 links.forEach((link) => link.addEventListener('click', onLinkClick));
 
 function onLinkClick(e) {
-    links.forEach((link) => {
-        link.children[0].classList.remove(
-            //code here
-        )
-    })
+
     //hide panels
     panels.forEach((panel) => panel.classList.add('hidden'));
 
@@ -23,3 +19,13 @@ function onLinkClick(e) {
     console.log(classString);
 }
 //<script src="js/script.js" defer></script>
+
+const anchors = document.querySelectorAll('a');
+
+anchors.forEach(anchor => {
+    anchor.addEventListener('click', () => {
+        anchors.forEach(l => l.classList.remove('ficons'));
+
+        anchor.classList.add('ficons');
+});
+});
